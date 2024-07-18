@@ -23,8 +23,5 @@ public abstract class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-    public double getDiscount(double discount){
-        double amount = price*(discount/100);
-        return price - amount;
-    }
+    abstract public double getDiscount(double discount);
 }
